@@ -1,0 +1,32 @@
+From: Fernando Broncano <fbroncano@unex.es>
+Subject: nav3: strip whitespace-only ephemeris fields before float()
+
+RINEX 3 navigation files may pad an unused ephemeris field with spaces rather
+than leave it absent. BeiDou emits its empty fields as nineteen spaces.
+
+A string of spaces is truthy in Python, so in `float(s or 0)` the right-hand
+operand is never evaluated, float() is called on the spaces and raises
+ValueError. The handler logs "malformed line for {sv}" at INFO level and leaves
+the whole row of `darr` at its initial NaN, so the entire ephemeris is dropped
+rather than the single empty field that caused it.
+
+The reader therefore returns a usable but silently incomplete set. Measured at
+EPN station ACOR: 0 of 397 BeiDou ephemerides read before this change and 397
+of 397 after, while all 208 GPS and 1542 Galileo ephemerides were unaffected
+in both cases.
+
+Applies to georinex 1.16.2.
+  cd <georinex checkout> && patch -p1 < georinex-nav3.patch
+
+---
+--- a/src/georinex/nav3.py
++++ b/src/georinex/nav3.py
+@@ -104,7 +104,7 @@
+             for j, i in enumerate(svi):
+                 try:
+                     darr[j, compact_index] = [
+-                        float(raws[i][LF * k : LF * (k + 1)] or 0)
++                        float(raws[i][LF * k : LF * (k + 1)].strip() or 0)
+                         for k in range(len(compact_index))
+                     ]
+                 except ValueError:

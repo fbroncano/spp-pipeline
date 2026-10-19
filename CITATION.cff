@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Multi-constellation SPP pipeline and its validation over the Spanish ERGNSS network"
+type: software
+license: MIT
+version: 1.4.0
+repository-code: "https://github.com/fbroncano/spp-pipeline"
+authors:
+  - family-names: Broncano
+    given-names: Fernando
+    orcid: "https://orcid.org/0009-0001-8104-6232"
+    affiliation: "Universidad de Extremadura"
+  - family-names: Rodríguez
+    given-names: Pablo G.
+    orcid: "https://orcid.org/0000-0001-8168-7892"
+    affiliation: "Universidad de Extremadura"
+  - family-names: Caro
+    given-names: Andrés
+    orcid: "https://orcid.org/0000-0002-6367-2694"
+    affiliation: "Universidad de Extremadura"
+  - family-names: Torrecilla-Pinero
+    given-names: Jesús A.
+    orcid: "https://orcid.org/0000-0001-9406-1100"
+    affiliation: "Universidad de Extremadura"
+  - family-names: Cuartero
+    given-names: Aurora
+    orcid: "https://orcid.org/0000-0002-0219-9696"
+    affiliation: "Universidad de Extremadura"
+keywords:
+  - GNSS
+  - standard point positioning
+  - broadcast ephemerides
+  - multi-constellation
+  - ERGNSS
+references:
+  - type: article
+    title: "A PostGIS-Based Information System for Trustworthy and Quality-Aware Management of Multi-Constellation GNSS Data from Permanent Reference Stations"
+    authors:
+      - family-names: Broncano
+        given-names: Fernando
+      - family-names: Rodríguez
+        given-names: Pablo G.
+      - family-names: Caro
+        given-names: Andrés
+      - family-names: Rivero-Cacho
+        given-names: Antonio
+      - family-names: Cuartero
+        given-names: Aurora
+    journal: Electronics
+    volume: 15
+    issue: 17
+    start: 3899
+    year: 2026
+    doi: 10.3390/electronics15173899

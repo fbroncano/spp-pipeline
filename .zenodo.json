@@ -1,0 +1,66 @@
+{
+  "title": "Multi-constellation SPP pipeline and its validation over the Spanish ERGNSS network",
+  "description": "Code accompanying the article 'A Multi-Constellation Standard Point Positioning Pipeline and Its Validation over the Spanish Geodetic Network' (IEEE Access, under review). It contains the end-to-end standard point positioning (SPP) pipeline, which computes daily station positions from the observation and navigation RINEX files of the IGN ERGNSS network using broadcast ephemerides only, for GPS, Galileo, BeiDou and their combination: satellite positions and clocks from broadcast ephemerides, ionosphere-free combination with Hatch smoothing of the ionosphere-free code and phase, BeiDou group delays, Saastamoinen troposphere, weighted least squares with inter-system biases and five daily-position estimators. It also contains the analysis that validates the solutions of thirteen stations over 2024 and 2025 against the official IGN coordinates and against the daily PPP series of the Nevada Geodetic Laboratory, the database schema used to store them (an extension of the GeoGNSS-PS schema) and a patch for georinex 1.16.2, whose RINEX 3 navigation reader silently discards every BeiDou ephemeris. GNSS data are obtained from the IGN ERGNSS server, station metadata from the EPN site logs and the reference series from the Nevada Geodetic Laboratory; none of them is redistributed.",
+  "creators": [
+    {
+      "name": "Broncano, Fernando",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0009-0001-8104-6232"
+    },
+    {
+      "name": "Rodríguez, Pablo G.",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0001-8168-7892"
+    },
+    {
+      "name": "Caro, Andrés",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0002-6367-2694"
+    },
+    {
+      "name": "Torrecilla-Pinero, Jesús A.",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0001-9406-1100"
+    },
+    {
+      "name": "Cuartero, Aurora",
+      "affiliation": "Universidad de Extremadura",
+      "orcid": "0000-0002-0219-9696"
+    }
+  ],
+  "license": "mit",
+  "upload_type": "software",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.4.0",
+  "keywords": [
+    "GNSS",
+    "standard point positioning",
+    "SPP",
+    "broadcast ephemerides",
+    "multi-constellation",
+    "GPS",
+    "Galileo",
+    "BeiDou",
+    "Hatch filter",
+    "ERGNSS",
+    "NGL",
+    "PostGIS",
+    "georinex",
+    "Spain"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.3390/electronics15173899",
+      "relation": "references",
+      "scheme": "doi",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "10.5281/zenodo.20538639",
+      "relation": "requires",
+      "scheme": "doi",
+      "resource_type": "software"
+    }
+  ]
+}

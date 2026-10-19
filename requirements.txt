@@ -1,0 +1,14 @@
+# Python 3.12. georinex must be patched with patches/georinex-nav3.patch,
+# otherwise every BeiDou ephemeris is silently discarded (see README).
+georinex==1.16.2
+hatanaka==2.8.1
+ncompress==1.0.2
+netCDF4==1.7.4
+xarray==2026.7.0
+numpy==2.5.1
+pandas==3.0.5
+pyproj==3.7.2
+requests==2.34.2
+psycopg2-binary==2.9.12
+scipy==1.18.0
+matplotlib==3.11.1

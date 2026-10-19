@@ -1,0 +1,26 @@
+-- Controlled vocabularies (constellations, methods, software, ephemeris products, frames).
+INSERT INTO public.constellations VALUES (0, 'GEC', 'Multi-GNSS');
+INSERT INTO public.constellations VALUES (1, 'G', 'GPS');
+INSERT INTO public.constellations VALUES (2, 'E', 'Galileo');
+INSERT INTO public.constellations VALUES (3, 'C', 'BeiDou');
+INSERT INTO public.ephemeris_type VALUES (0, 'unknown');
+INSERT INTO public.ephemeris_type VALUES (1, 'broadcast');
+INSERT INTO public.ephemeris_type VALUES (2, 'final');
+INSERT INTO public.ephemeris_type VALUES (3, 'rapid');
+INSERT INTO public.ephemeris_type VALUES (4, 'ultra-rapid');
+INSERT INTO public.methods VALUES (1, 'mean', 'Arithmetic mean');
+INSERT INTO public.methods VALUES (2, 'median', 'Median');
+INSERT INTO public.methods VALUES (3, 'weighted', 'PDOP-weighted mean');
+INSERT INTO public.methods VALUES (4, 'mad', 'MAD filter + mean');
+INSERT INTO public.methods VALUES (5, 'weighted_mad', 'MAD filter + PDOP-weighted mean');
+INSERT INTO public.reference_frames VALUES (0, 'unknown', 'Unknown or unspecified realisation');
+INSERT INTO public.reference_frames VALUES (1, 'ETRS89', 'European Terrestrial Reference System 1989');
+INSERT INTO public.reference_frames VALUES (2, 'REGCAN95', 'Red Geodesica de Canarias 1995');
+INSERT INTO public.reference_frames VALUES (3, 'ITRF2014', 'International Terrestrial Reference Frame 2014');
+INSERT INTO public.reference_frames VALUES (4, 'ITRF2020', 'International Terrestrial Reference Frame 2020');
+INSERT INTO public.reference_frames VALUES (5, 'IGS20', 'IGS realisation of ITRF2020');
+INSERT INTO public.software VALUES (0, 'unknown', 'unknown');
+INSERT INTO public.software VALUES (1, 'SPPs own implementation', '1.1.0');
+INSERT INTO public.software VALUES (2, 'SPPs own implementation', '1.2.0');
+INSERT INTO public.software VALUES (3, 'SPPs own implementation', '1.3.0');
+INSERT INTO public.software VALUES (4, 'SPPs own implementation', '1.4.0');

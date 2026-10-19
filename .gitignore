@@ -1,0 +1,19 @@
+# Local credentials: never publish
+postgis*.cfg
+!postgis.cfg.example
+
+# Downloaded and generated data
+processor/downloads/
+processor/data/
+processor/logs/
+data/
+results/
+results_v130/
+figures/
+
+# Python / OS noise
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
