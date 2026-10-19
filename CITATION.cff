@@ -4,6 +4,7 @@ title: "Multi-constellation SPP pipeline and its validation over the Spanish ERG
 type: software
 license: MIT
 version: 1.4.0
+doi: 10.5281/zenodo.23472096
 repository-code: "https://github.com/fbroncano/spp-pipeline"
 authors:
   - family-names: Broncano

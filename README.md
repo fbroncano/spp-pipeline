@@ -15,6 +15,8 @@ Laboratory (NGL).
 
 Repository: https://github.com/fbroncano/spp-pipeline
 
+Archived on Zenodo: doi:[10.5281/zenodo.23472096](https://doi.org/10.5281/zenodo.23472096) (concept DOI, resolves to the latest version).
+
 ## Repository structure
 
 ```
@@ -225,4 +227,5 @@ None of them is redistributed with the code.
 ## Licence and citation
 
 MIT licence (see `LICENSE`). If you use this code, please cite the article and the
-archived release (see `CITATION.cff`).
+archived release, doi:[10.5281/zenodo.23472096](https://doi.org/10.5281/zenodo.23472096)
+(see `CITATION.cff`).
